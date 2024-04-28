@@ -1,0 +1,121 @@
+@import './index.scss';
+
+h1 {
+    color: $white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .4s linear;
+    &:hover{
+        color: $cyan;
+        cursor: pointer;
+    }
+}
+
+p {
+    color: $soft-blue;
+    font-weight: 300;
+}
+
+main {
+    width: clamp(150px, 85vw, 350px);
+    background: $card-bg;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 14px 12px 25px rgb(0, 0, 32);
+
+}
+
+main .images-container {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+    .overlay{
+        display: none;
+      
+    }
+  
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    &:hover{
+     .overlay{
+        background: rgba($cyan, 0.5) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 99%;
+        position: absolute;
+        z-index: 5;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+       
+
+        button{
+            background: url('./assets/icon-view.svg') no-repeat center;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+     }
+
+     
+    }
+}
+
+
+main>* {
+    margin-top: 14px;
+}
+
+.criptoInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    article {
+        display: flex;
+
+        .icon {
+            margin-right: 10px;
+        }
+
+    }
+
+    .value-info p {
+        text-transform: uppercase;
+        color: $cyan;
+        font-weight: 400;
+    }
+
+}
+
+hr {
+    border: 1px solid $line;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+
+    img {
+        width: 35px;
+        border-radius: 50%;
+        border: 1px solid $white;
+        margin-right: 20px;
+    }
+
+    .accent {
+        color: $white;
+        transition: .4s linear;
+    &:hover{
+        color: $cyan;
+        cursor: pointer;
+    }
+    }
+}

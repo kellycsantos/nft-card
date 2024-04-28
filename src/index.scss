@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+$soft-blue : #8bacda;
+$cyan : #00fff7;
+$main-bg : #0d192b;
+$card-bg :  #14253d;
+$line : #2f415b;
+$white : #fff;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-position: inside;
+  outline: none;
+}
+
+body{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  background: $main-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button{
+  cursor: pointer;
+}
+
